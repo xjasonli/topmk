@@ -1,0 +1,35 @@
+# topmk: A makefile template to easy build C/C++ projects
+# Li Xinjie (xjason.li@gmail.com)
+
+# This file contains some default values for topmk.
+# You should include this file at the beginning of your Makefile.
+
+# Platform variables
+OS       = $(shell uname -s | tr A-Z a-z)
+ARCH     = $(shell uname -m | tr A-Z a-z)
+
+# Variables affecting global compiler/linker flags
+DEBUGING = -g -DNDEBUG
+OPTIMIZE = -O3
+WARNINGS = -Wall
+INCPATHS = 
+LIBPATHS = 
+
+# Global C/C++ compiler flags
+CFLAGS   = $(DEBUGING) $(OPTIMIZE) $(WARNINGS) $(addprefix -I,$(INCPATHS))
+CXXFLAGS = $(DEBUGING) $(OPTIMIZE) $(WARNINGS) $(addprefix -I,$(INCPATHS))
+# Global C/C++ preprocessor flags
+CPPFLAGS =
+# Global linker flags (for program files / shared libraries)
+LDFLAGS  = $(addprefix -L,$(LIBPATHS))
+# Global linker libraries (for program files / shared libraries)
+LDLIBS   =
+# Global linker rpaths (for program files / shared libraries)
+RPATHS   = $(LIBPATHS)
+
+# FreeBSD compiler/linker flags
+ifeq ($(OS),freebsd)
+INCPATHS+= /usr/local/include
+LIBPATHS+= /usr/local/lib
+endif
+
