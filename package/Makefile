@@ -21,3 +21,5 @@ SUBDIRS =
 include $(TOPMK)/topmk.all
 # Do not place any rules or targets above this line
 
+all: package
+
