@@ -2,7 +2,6 @@
 # 1. uesr target
 # 2. source file
 define TOPMK_OBJECT_RULE
-$$(call topmkCheckExists,$2)
 $$(call topmkConvertPathWithPfxSfx,$2,$1-,.o): $2
 ifneq ($$(filter $$(addprefix %.,$(C_SRCEXTS)),$2),)
 	$(CC) -c $$($1_CPPFLAGS) $$($1_CFLAGS) -o $$@ $2

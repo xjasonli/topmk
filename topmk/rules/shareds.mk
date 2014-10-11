@@ -5,6 +5,7 @@ $$(call topmkCheckShared,$1)
 ## source files
 $1_SOURCES  ?=
 $$(call topmkCheckNotEmpty,$$($1_SOURCES),$1_SOURCES)
+$1_SOURCES  := $$(call topmkUniq,$$($1_SOURCES))
 
 # flags
 $1_CPPFLAGS += $(CPPFLAGS)

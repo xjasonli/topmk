@@ -6,6 +6,7 @@ TOPMK  ?= /usr/share/topmk
 
 include $(TOPMK)/variables/constant.mk
 include $(TOPMK)/variables/platform.mk
+include $(TOPMK)/macros/misc.mk
 include $(TOPMK)/macros/check.mk
 include $(TOPMK)/macros/find.mk
 include $(TOPMK)/macros/convert.mk
