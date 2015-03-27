@@ -1,8 +1,7 @@
 %define debug_package %{nil}
 %define __os_install_post %{nil}
 license: Commercial
-vendor: None
-group: Development/Libraries
+group: Application/System
 buildroot: %{_tmppath}/%{name}-%{version}-%{release}-%(%{__id_u} -n)
 
 # Package information
@@ -23,14 +22,6 @@ release: 1%{?dist}
 %description
 %{summary}
 
-%package devel
-group: Development/Libraries
-summary: %{summary} development files
-requires: %{name} = %{version}-%{release}
-
-%description devel
-%{summary} development files
-
 # Prepare section. Uncomment this section if source tarball is used
 #%prep
 #%setup -q
@@ -46,15 +37,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-# %dir %{_prefix}/lib
-# %{_prefix}/lib/*.so.*
-
-%files devel
-%defattr(-,root,root)
-# %dir %{_prefix}/include
-# %dir %{_prefix}/lib
-# %{_prefix}/include
-# %{_prefix}/lib/*.so
+# %dir %{_prefix}/bin
+# %{_prefix}/bin/foobar
 
 %pre
 if [ $1 -eq 1 ]; then

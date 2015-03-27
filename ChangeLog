@@ -1,3 +1,18 @@
+* Fri Mar 27 2015 lixinjie <xjason.li@gmail.com> 1.1.11
+- Use install prefix or /usr/local as default PREFIX 
+- Move skeletons/*.spec into skeletons/rpm directory
+- Change install path from PREFIX/share to PREFIX/include
+
+* Wed Feb 11 2015 lixinjie <xjason.li@gmail.com> 1.1.10
+- Move platform specified flags into variables/platform module
+- Move customized flags into variables/customized module
+
+* Wed Jan 28 2015 lixinjie <xjason.li@gmail.com> 1.1.9
+- Remove default rpaths
+
+* Wed Nov 26 2014 lixinjie <xjason.li@gmail.com> 1.1.8
+- Ignore not generating rpm files
+
 * Sat Oct 11 2014 lixinjie <xjason.li@gmail.com> 1.1.7
 - Suppress error reports during depend file generating
 - Add source file list uniq logic

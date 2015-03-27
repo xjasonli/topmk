@@ -6,3 +6,7 @@ CPOPT_FORCE     := -f
 
 SEDOPT_UNBUFFERED := -l
 
+CXXFLAGS += -I/usr/local/include
+CFLAGS   += -I/usr/local/include
+LDFLAGS  += -L/usr/local/lib
+

@@ -29,7 +29,6 @@ ifeq ($$($1_ROOT),)
 $1_ROOT := $(ROOT)
 else
 $1_ROOT := $$(abspath $$($1_ROOT))
-
 endif
 
 # change log and version
@@ -112,7 +111,7 @@ $$($1_PACKAGE): package-$1
 package-$1: prepare-package-$1
 	@echo "====> Building package-$1"
 	$$($1_PKGCMD) $$($1_PKGOPT) -bb $$($1_SPECFILE)
-	@mv $$($1_PACKAGE_FULLPATH) $$(shell pwd)/
+	-@mv $$($1_PACKAGE_FULLPATH) $$(shell pwd)/
 
 prepare-package-$1: prepare-rpm-package $$($1_SPECFILE)
 ifneq ($$($1_PKGTAR),)

@@ -41,3 +41,17 @@ ifeq ($(INCLUDEDIR),)
 INCLUDEDIR = include
 endif
 
+ifeq ($(PREFIX),)
+ifeq ($(notdir $(abspath $(dir $(TOPMK)))),$(INCLUDEDIR))
+PREFIX = $(abspath $(dir $(abspath $(dir $(TOPMK)))))
+else
+PREFIX = /usr/local
+endif
+endif
+
+ifneq ($(PREFIX),/usr)
+CFLAGS   += -I$(PREFIX)/$(INCLUDEDIR)
+CXXFLAGS += -I$(PREFIX)/$(INCLUDEDIR)
+LDFLAGS  += -L$(PREFIX)/$(LIBDIR)
+endif
+

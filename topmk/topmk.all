@@ -1,8 +1,5 @@
-# topmk: A makefile template to easy build C/C++ projects
+# topmk: A makefile template for simiplify C/C++ projects building
 # Li Xinjie (xjason.li@gmail.com)
-
-PREFIX ?= /usr/local
-TOPMK  ?= /usr/share/topmk
 
 include $(TOPMK)/variables/constant.mk
 include $(TOPMK)/variables/platform.mk

@@ -2,7 +2,7 @@ TOPMK=$(shell while [ ! -f topmk/topmk.all ] && [ `pwd` != / ] ; do cd ..; done 
 include $(TOPMK)/topmk.def
 
 # Package prefix
-PREFIX = /usr
+PREFIX = /usr/local
 
 # Root directory
 ROOT = ..
