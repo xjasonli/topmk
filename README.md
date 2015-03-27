@@ -1,4 +1,3 @@
-topmk
+topmk: A makefile template to easily build C/C++ projects
 =====
 
-topmk: A makefile template to easily build C/C++ projects
