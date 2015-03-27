@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 ifneq ($(SUBDIRS),)
 
 .PHONY: all subdirs clean clean-subdirs $(SUBDIRS)

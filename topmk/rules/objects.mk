@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 # Object file rule
 # 1. uesr target
 # 2. source file

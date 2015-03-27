@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 ifeq ($(filter-out clean,$(MAKECMDGOALS)),)
 ifneq ($(MAKECMDGOALS),)
 DEPENDS_IGNORED = yes

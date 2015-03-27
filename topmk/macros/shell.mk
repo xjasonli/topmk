@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 # These macros are used as commands or parts of shell in rules.
 #
 # For example,

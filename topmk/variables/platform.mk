@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 # Common to all platforms defines.  These may be overridden in 
 # more specific files.
 

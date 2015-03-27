@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 ifneq ($(RPM_PACKAGES),)
 RPM_PACKAGE_BUILD_DIR := $(PACKAGE_BUILD_DIR)/rpm
 

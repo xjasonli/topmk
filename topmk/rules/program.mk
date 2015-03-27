@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 define TOPMK_PROGRAM_FILE_AUTO_RULE
 # validity checking
 $$(call topmkCheckProgram,$1)

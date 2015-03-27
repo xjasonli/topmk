@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 PACKAGE_BUILD_DIR_NAME := build-package
 PACKAGE_BUILD_DIR := $(shell pwd)/$(PACKAGE_BUILD_DIR_NAME)
 

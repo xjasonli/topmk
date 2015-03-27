@@ -1,3 +1,5 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
 
 topmkCheckShared = $(if $(filter %.so,$1),,$(error $1 is not a valid shared object filename))
 

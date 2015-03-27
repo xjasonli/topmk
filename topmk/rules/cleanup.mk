@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 ifneq ($(CLEAN),)
 
 .PHONY: all clean clean-CUSTOMIZE

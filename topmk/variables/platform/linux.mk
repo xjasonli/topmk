@@ -1,3 +1,6 @@
+# topmk: A makefile template for simiplify C/C++ projects building
+# Li Xinjie (xjason.li@gmail.com)
+
 # Linux system specific defines.
 
 CPOPT_NO_FOLLOW := -d
