@@ -1,6 +1,10 @@
 # topmk: A makefile template for simiplify C/C++ projects building
 # Li Xinjie (xjason.li@gmail.com)
 
+###########################
+# File extensions
+###########################
+
 # C source file extensions
 C_SRCEXTS := c
 
@@ -13,15 +17,28 @@ SRCEXTS := $(C_SRCEXTS) $(CXX_SRCEXTS)
 # Rpm packages file extensions
 RPM_PACKAGE_SRCEXTS := spec
 
+
+###########################
 # Character escaping
-# Whitespace
-$() $() := $() $()
-# Comma
+###########################
+
+# Whitespace - using with $( )
+_WHITESPACE_:=$() $()
+$(_WHITESPACE_):=$(_WHITESPACE_)
+undefine _WHITESPACE_
+
+# Comma - using with $(,)
 ,	:= ,
-# Hash
-POUND_SIGN   := \#
-$(POUND_SIGN):= \#
-POUND_SIGN   :=
+
+# Hash - using with $(#)
+_POUND_SIGN_   := \#
+$(_POUND_SIGN_):= \#
+undefine _POUND_SIGN_
+
+
+###########################
+# Special file names
+###########################
 
 # Change log files
 CHANGELOG_FILES := CHANGELOG ChangeLog changelog CHANGES Changes changes

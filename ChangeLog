@@ -1,3 +1,7 @@
+* Mon Oct 23 2017 lixinjie <xjason.li@gmail.com> 1.1.12
+- Add topmkJoinWith function
+- Fix whitespace escaping
+
 * Fri Mar 27 2015 lixinjie <xjason.li@gmail.com> 1.1.11
 - Use install prefix or /usr/local as default PREFIX 
 - Move skeletons/*.spec into skeletons/rpm directory
