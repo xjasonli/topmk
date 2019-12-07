@@ -25,7 +25,7 @@ RPM_PACKAGE_SRCEXTS := spec
 # Whitespace - using with $( )
 _WHITESPACE_:=$() $()
 $(_WHITESPACE_):=$(_WHITESPACE_)
-undefine _WHITESPACE_
+#undefine _WHITESPACE_
 
 # Comma - using with $(,)
 ,	:= ,
@@ -33,7 +33,7 @@ undefine _WHITESPACE_
 # Hash - using with $(#)
 _POUND_SIGN_   := \#
 $(_POUND_SIGN_):= \#
-undefine _POUND_SIGN_
+#undefine _POUND_SIGN_
 
 
 ###########################
